@@ -11,3 +11,8 @@
     max-width: 1024px;
     width: 100%;
 }
+
+.cabecalho button {
+    border: none;
+    cursor: pointer;
+}

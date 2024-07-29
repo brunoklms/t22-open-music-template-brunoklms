@@ -2,7 +2,6 @@
 .albuns {
     padding: 32px 0px 32px 0px;
     gap: 19px;
-    max-width: 100%;
 }
 
 .albuns-title {
@@ -18,7 +17,6 @@
     flex-wrap: wrap;
     padding: 4px 4px 0px 0px;
     background-color: var(--color-gray-7);
-    max-width: 100%;
 }
 
 
@@ -28,11 +26,11 @@
 }
 
 .itens-list img {
-    width: 100%;
-    max-width: 308px;
-    height: 290px;
     margin-bottom: 10px;
     cursor: pointer;
+    margin-top: 15px;
+    width: 308px;
+    height: 290px;
 }
 
 .itens-list h3 {
@@ -83,4 +81,14 @@
 .buy button:hover {
     background-color: var(--color-brand-1);
     cursor: pointer;
+}
+
+@media(max-width: 1024px) {
+    .itens-list {
+        flex-grow: 1;
+    }
+
+    .itens-list img {
+        width: 100%;
+    }
 }
