@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="./src/styles/albums.css">
     <title>Open Music</title>
   </head>
-  <body>
+  <body class="body">
     <!-- CABEÇALHO -->
     <header class="cabecalho">
       <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
-       <img src="./src/assets/icons/logo.svg" alt="Logo">
-       <button><img src="./src/assets/icons/moon-icon.svg" alt="Icone lua"></button>
+       <!-- <img src="./src/assets/icons/logo.svg" alt="Logo"> -->
+        <h1><span>o</span>pen <span>m</span>usic</h1>
+       <button class="theme"><img src="./src/assets/icons/moon-icon.svg" alt="Icone lua"></button>
+       <button class="theme--darkmode"><img src="./src/assets/icons/sun-icon.svg" alt="Icone Sol"></button>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
@@ -46,9 +48,9 @@
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
          <div class="price">
           <h2>Definir Preço</h2>
-         <p>Até <span>R$ 100</span></p>
+         <p>Até <span>R$ </span><span class="value">100</p>
          </div> 
-         <input type="range" id="range" name="range" min="0" max="150" value="150">
+         <input type="range" id="range" min="0" max="150" value="150">
       </section>
 
       <!-- SEÇÃO DE ALBUNS -->
@@ -58,7 +60,6 @@
          <h2 class="albuns-title">Albuns Encontrados</h2>
           <ul class="albuns-list">
             <li class="itens-list">
-              <img src="./src/assets/imgs/cover-1.png" alt="Foto Album">
               <h3>Acabou o Chorare</h3>
               <div class="infos">
                 <p>Novos Baianos</p>
@@ -139,7 +140,5 @@
       </section>
     </main>
     <script type="module" src="./src/scripts/index.js"></script>
-    <script type="module" src="./src/scripts/inputRange.js"></script>
-    <script type="module" src="./src/scripts/albumsDatabase.js"></script>
   </body>
 </html>

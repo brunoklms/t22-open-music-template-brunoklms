@@ -12,7 +12,23 @@
     width: 100%;
 }
 
+.cabecalho h1 {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--color-gray-2);
+}
+
+.cabecalho span {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--color-brand-2);
+}
+
 .cabecalho button {
     border: none;
     cursor: pointer;
+}
+
+.theme--darkmode {
+    display: none;
 }
