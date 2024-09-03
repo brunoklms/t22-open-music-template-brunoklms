@@ -13,7 +13,8 @@
 
 .albuns-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 46px;
     flex-wrap: wrap;
     padding: 4px 4px 0px 0px;
 }
@@ -28,7 +29,6 @@
 .itens-list img {
     margin-bottom: 10px;
     cursor: pointer;
-    margin-top: 15px;
     width: 308px;
     height: 290px;
 }
